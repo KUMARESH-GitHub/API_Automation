@@ -18,14 +18,15 @@ public class BDD_Rest_Assured {
         System.out.println("JSON Response: " + path);
     }
 
-    @And("status code of GET method occured")
+    @When("status code of GET method occured")
     public void getStatusCode(){
         statusCode = response.getStatusCode(); /* Get Status Code */
         System.out.println("Status Code: " + statusCode);
     }
 
-    @When("Check the status code")
+    @Then("Check the status code")
     public void validatestatusCode(){
         Assert.assertEquals(statusCode , 200, "Failed with incorrect matches!!"); /* Assertion Validation */
+        System.out.println("Assertion Passed");
     }
 }

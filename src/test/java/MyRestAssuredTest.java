@@ -77,7 +77,7 @@ public class MyRestAssuredTest {
 
     @Test(enabled = true, description = "Parameterization (File Operations)")
     public void fileOperation() throws IOException {
-        String filePath = "C:\\Users\\kumaresh.s\\Automation\\rest-assured-practice\\src\\test\\java\\Test Data\\testData.xlsx";
+        String filePath = "C:\\Users\\KUMARESH S\\Automation\\RestAssuredPractice\\src\\test\\java\\Test Data\\testData.xlsx";
         FileInputStream fis = new FileInputStream(filePath);
         XSSFWorkbook wb = new XSSFWorkbook(fis);
         XSSFSheet sheet = wb.getSheetAt(0);
